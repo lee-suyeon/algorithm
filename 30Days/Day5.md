@@ -81,6 +81,8 @@ n x i = result.
 
 > 주어진 정수에 1 ~ 10까지 곱한 결과를 출력한다.
 
+<br />
+
 **Code**
 
 ```javascript
@@ -98,5 +100,3 @@ function main() {
   }
 }
 ```
-
-**Review**
