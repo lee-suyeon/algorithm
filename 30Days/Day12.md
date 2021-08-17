@@ -68,3 +68,44 @@ Grade: O
 **Explanation**
 
 This student had 2 scores to average: 100 and 80. The student's average grade is (100 + 80) / 2 = 90. An average grade of 90 corresponds to the letter grade _O_, so the calculate() method should return the character 'O'.
+
+<br />
+
+**Solution**
+
+> 클래스의 상속을 이용한다.
+> 학생들의 점수의 평균에 해당하는 grade를 리턴한다.
+
+<br />
+
+**Code**
+
+```javascript
+class Student extends Person {
+  constructor(firstName, lastName, id, scores) {
+    super(firstName, lastName, id, scores);
+    this.scores = scores;
+  }
+
+  calculate() {
+    const average = this.scores.reduce((a, c) => a + c) / this.scores.length;
+
+    let grade = "";
+    if (90 <= average && average <= 100) {
+      grade = "O";
+    } else if (80 <= average && average < 90) {
+      grade = "E";
+    } else if (70 <= average && average < 80) {
+      grade = "A";
+    } else if (55 <= average && average < 70) {
+      grade = "P";
+    } else if (40 <= average && average < 55) {
+      grade = "D";
+    } else {
+      grade = "T";
+    }
+
+    return grade;
+  }
+}
+```
