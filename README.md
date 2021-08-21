@@ -17,7 +17,7 @@
 - ✅ Day 12 : Inheritance
 - ✅ Day 13 : Abstract Classes
 - Day 14 : Scope
-- Day 15 : Linked List
+- ✅ Day 15 : Linked List
 - Day 16 : Exceptions - String to Integer
 - Day 17 : More Exceptions
 - Day 18 : Queues and Stacks
